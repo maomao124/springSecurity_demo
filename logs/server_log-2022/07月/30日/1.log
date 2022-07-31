@@ -1,0 +1,4 @@
+2022-07-30 20:54:54.380  INFO 2600 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 1.346 seconds (JVM running for 1.768)
+2022-07-30 20:54:57.995  INFO 2600 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-30 20:54:57.995  INFO 2600 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-30 20:54:57.996  INFO 2600 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
