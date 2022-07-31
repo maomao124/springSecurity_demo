@@ -21,6 +21,12 @@ spring:
 
 
 
+#  security:
+#    user:
+#      name: abc
+#      password: 123456
+
+
 
 
 

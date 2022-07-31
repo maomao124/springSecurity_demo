@@ -1,8 +1,11 @@
 package mao.springsecurity_demo.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
  * Project name(项目名称)：springSecurity_demo
@@ -32,4 +35,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 .anyRequest().authenticated();
 
     }
+
+
+    @Bean
+    public PasswordEncoder passwordEncoder()
+    {
+        return new BCryptPasswordEncoder();
+    }
+
 }
