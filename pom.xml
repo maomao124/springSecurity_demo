@@ -82,6 +82,13 @@
             <version>2.7.0</version>
         </dependency>
 
+        <!--模板引擎thymeleaf-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+<!--        </dependency>-->
+
+
     </dependencies>
 
     <build>

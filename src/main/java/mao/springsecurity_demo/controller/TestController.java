@@ -27,4 +27,10 @@ public class TestController
         return "success";
     }
 
+    @GetMapping("/noauth")
+    public String noAuth()
+    {
+        return "noAuth";
+    }
+
 }

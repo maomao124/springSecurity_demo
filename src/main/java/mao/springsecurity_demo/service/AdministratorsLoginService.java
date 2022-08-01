@@ -1,6 +1,8 @@
 package mao.springsecurity_demo.service;
 
 import mao.springsecurity_demo.entity.AdministratorsPassword;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
@@ -26,6 +28,9 @@ import org.springframework.stereotype.Service;
 public class AdministratorsLoginService implements UserDetailsService
 {
 
+    private static final Logger log = LoggerFactory.getLogger(AdministratorsLoginService.class);
+
+
     @Autowired
     private IAdministratorsPasswordService administratorsPasswordService;
 
@@ -33,6 +38,8 @@ public class AdministratorsLoginService implements UserDetailsService
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException
     {
+        log.debug("进入AdministratorsLoginService");
+
         //判空
         if (username == null || username.equals(""))
         {
