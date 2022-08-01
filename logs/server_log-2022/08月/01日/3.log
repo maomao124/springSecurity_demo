@@ -1,0 +1,111 @@
+2022-08-01 14:34:31.200  INFO 13020 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:34:31.203  INFO 13020 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 14:34:34.821  INFO 18556 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 18556 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 14:34:34.823 DEBUG 18556 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 14:34:34.823  INFO 18556 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 14:34:35.611  INFO 18556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:34:35.618  INFO 18556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 14:34:35.618  INFO 18556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 14:34:35.702  INFO 18556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 14:34:35.702  INFO 18556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 848 ms
+2022-08-01 14:34:35.802  INFO 18556 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 14:34:35.901  INFO 18556 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 14:34:35.998  WARN 18556 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 14:34:36.002  WARN 18556 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:34:36.058  WARN 18556 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 14:34:36.059  WARN 18556 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:34:36.412  INFO 18556 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c9306d3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4270b142, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d194314, org.springframework.security.web.header.HeaderWriterFilter@42c0a16e, org.springframework.security.web.csrf.CsrfFilter@b1b471, org.springframework.security.web.authentication.logout.LogoutFilter@382d71c7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ca54da9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@640d604, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2dfa02c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@637c840d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@119290b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6314df3c, org.springframework.security.web.session.SessionManagementFilter@543fe698, org.springframework.security.web.access.ExceptionTranslationFilter@24134cbc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@681061d6]
+2022-08-01 14:34:36.463  INFO 18556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 14:34:36.473  INFO 18556 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 1.983 seconds (JVM running for 2.463)
+2022-08-01 14:34:40.806  INFO 18556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 14:34:40.807  INFO 18556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 14:34:40.807  INFO 18556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-01 14:34:57.155 ERROR 18556 --- [http-nio-8080-exec-2] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): mao.springsecurity_demo.mapper.AdministratorsPasswordMapper.selectById
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): mao.springsecurity_demo.mapper.AdministratorsPasswordMapper.selectById
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235) ~[mybatis-3.5.9.jar:3.5.9]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:50) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:115) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectById(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.extension.service.IService.getById(IService.java:292) ~[mybatis-plus-extension-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>) ~[mybatis-plus-extension-3.5.1.jar:3.5.1]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
+	at mao.springsecurity_demo.service.impl.AdministratorsPasswordServiceImpl$$EnhancerBySpringCGLIB$$60c611aa.getById(<generated>) ~[classes/:na]
+	at mao.springsecurity_demo.service.AdministratorsLoginService.loadUserByUsername(AdministratorsLoginService.java:51) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.7.2.jar:5.7.2]
+	... 60 common frames omitted
+
+2022-08-01 14:36:07.723  INFO 18556 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:36:07.724  INFO 18556 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 14:36:35.150  INFO 13412 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 13412 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 14:36:35.152 DEBUG 13412 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 14:36:35.153  INFO 13412 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"

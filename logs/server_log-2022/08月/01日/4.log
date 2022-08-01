@@ -1,0 +1,145 @@
+2022-08-01 14:36:35.941  INFO 13412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:36:35.953  INFO 13412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 14:36:35.954  INFO 13412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 14:36:36.040  INFO 13412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 14:36:36.041  INFO 13412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 855 ms
+2022-08-01 14:36:36.145  INFO 13412 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 14:36:36.245  INFO 13412 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 14:36:36.343  WARN 13412 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 14:36:36.347  WARN 13412 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:36:36.403  WARN 13412 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 14:36:36.403  WARN 13412 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:36:36.759  INFO 13412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b9088f2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a914089, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d30007d, org.springframework.security.web.header.HeaderWriterFilter@256bb5be, org.springframework.security.web.csrf.CsrfFilter@76396509, org.springframework.security.web.authentication.logout.LogoutFilter@4ce25e47, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6380e9e9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67b61834, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43d76a92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ca54da9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c951ada, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a2bf50f, org.springframework.security.web.session.SessionManagementFilter@2e6d76ba, org.springframework.security.web.access.ExceptionTranslationFilter@7e7740a5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17c4dc5b]
+2022-08-01 14:36:36.811  INFO 13412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 14:36:36.821  INFO 13412 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.006 seconds (JVM running for 2.559)
+2022-08-01 14:36:42.948  INFO 13412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 14:36:42.948  INFO 13412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 14:36:42.949  INFO 13412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-01 14:36:46.442 ERROR 13412 --- [http-nio-8080-exec-4] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): mao.springsecurity_demo.mapper.AdministratorsPasswordMapper.selectById
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.7.2.jar:5.7.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): mao.springsecurity_demo.mapper.AdministratorsPasswordMapper.selectById
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235) ~[mybatis-3.5.9.jar:3.5.9]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:50) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:115) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.1.jar:3.5.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectById(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.extension.service.IService.getById(IService.java:292) ~[mybatis-plus-extension-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>) ~[mybatis-plus-extension-3.5.1.jar:3.5.1]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
+	at mao.springsecurity_demo.service.impl.AdministratorsPasswordServiceImpl$$EnhancerBySpringCGLIB$$60c611aa.getById(<generated>) ~[classes/:na]
+	at mao.springsecurity_demo.service.AdministratorsLoginService.loadUserByUsername(AdministratorsLoginService.java:51) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.7.2.jar:5.7.2]
+	... 60 common frames omitted
+
+2022-08-01 14:41:04.500  INFO 17656 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Starting IAdministratorsPasswordServiceTest using Java 16.0.2 on mao with PID 17656 (started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 14:41:04.501 DEBUG 17656 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 14:41:04.501  INFO 17656 --- [main] m.s.s.IAdministratorsPasswordServiceTest : The following 1 profile is active: "dev"
+2022-08-01 14:41:05.642  INFO 17656 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 14:41:05.897  INFO 17656 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 14:41:06.089  WARN 17656 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 14:41:06.097  WARN 17656 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:41:06.178  WARN 17656 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 14:41:06.179  WARN 17656 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:41:07.622  INFO 17656 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21733cbe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77ccded4, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e00837f, org.springframework.security.web.header.HeaderWriterFilter@54c11750, org.springframework.security.web.csrf.CsrfFilter@2755617b, org.springframework.security.web.authentication.logout.LogoutFilter@7404ddca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e50ae56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@638afcaa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@64c8fcfb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77663cd7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@394a6d2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21be14c2, org.springframework.security.web.session.SessionManagementFilter@32a8ca06, org.springframework.security.web.access.ExceptionTranslationFilter@305b43ca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ce3409b]
+2022-08-01 14:41:07.761  INFO 17656 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Started IAdministratorsPasswordServiceTest in 3.649 seconds (JVM running for 4.55)
+2022-08-01 14:41:08.442  INFO 17656 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:41:08.445  INFO 17656 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 14:44:09.111  INFO 12468 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Starting IAdministratorsPasswordServiceTest using Java 16.0.2 on mao with PID 12468 (started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 14:44:09.112 DEBUG 12468 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 14:44:09.113  INFO 12468 --- [main] m.s.s.IAdministratorsPasswordServiceTest : The following 1 profile is active: "dev"
+2022-08-01 14:44:10.304  INFO 12468 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 14:44:10.538  INFO 12468 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 14:44:10.729  WARN 12468 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 14:44:10.734  WARN 12468 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:44:10.831  WARN 12468 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 14:44:10.832  WARN 12468 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:44:12.321  INFO 12468 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f3c8b60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16bbaab3, org.springframework.security.web.context.SecurityContextPersistenceFilter@163e8949, org.springframework.security.web.header.HeaderWriterFilter@55adcf9e, org.springframework.security.web.csrf.CsrfFilter@6e0d16a4, org.springframework.security.web.authentication.logout.LogoutFilter@2eebce87, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38f617f4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@59f45950, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3f357c9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43e8f1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46d0f89c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fe42a09, org.springframework.security.web.session.SessionManagementFilter@638afcaa, org.springframework.security.web.access.ExceptionTranslationFilter@5c70d7f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ba9f986]
+2022-08-01 14:44:12.451  INFO 12468 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Started IAdministratorsPasswordServiceTest in 3.832 seconds (JVM running for 4.826)
+2022-08-01 14:44:13.552 DEBUG 12468 --- [main] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administratorNo = ?)
+2022-08-01 14:44:13.589 DEBUG 12468 --- [main] m.s.m.A.selectList                       : ==> Parameters: 10001(Integer)
+2022-08-01 14:44:13.679  INFO 12468 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:44:13.684  INFO 12468 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 14:44:49.288  INFO 15472 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Starting IAdministratorsPasswordServiceTest using Java 16.0.2 on mao with PID 15472 (started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 14:44:49.289 DEBUG 15472 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 14:44:49.289  INFO 15472 --- [main] m.s.s.IAdministratorsPasswordServiceTest : The following 1 profile is active: "dev"
+2022-08-01 14:44:50.523  INFO 15472 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 14:44:50.769  INFO 15472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 14:44:50.967  WARN 15472 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 14:44:50.974  WARN 15472 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:44:51.056  WARN 15472 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 14:44:51.058  WARN 15472 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:44:52.525  INFO 15472 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f3c8b60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16bbaab3, org.springframework.security.web.context.SecurityContextPersistenceFilter@163e8949, org.springframework.security.web.header.HeaderWriterFilter@55adcf9e, org.springframework.security.web.csrf.CsrfFilter@6e0d16a4, org.springframework.security.web.authentication.logout.LogoutFilter@2eebce87, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38f617f4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@59f45950, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3f357c9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43e8f1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46d0f89c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fe42a09, org.springframework.security.web.session.SessionManagementFilter@638afcaa, org.springframework.security.web.access.ExceptionTranslationFilter@5c70d7f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ba9f986]
+2022-08-01 14:44:52.664  INFO 15472 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Started IAdministratorsPasswordServiceTest in 3.762 seconds (JVM running for 4.663)
+2022-08-01 14:44:53.628 DEBUG 15472 --- [main] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 14:44:53.663 DEBUG 15472 --- [main] m.s.m.A.selectList                       : ==> Parameters: 10001(Integer)
+2022-08-01 14:44:53.692 DEBUG 15472 --- [main] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 14:44:53.716  INFO 15472 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:44:53.720  INFO 15472 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
