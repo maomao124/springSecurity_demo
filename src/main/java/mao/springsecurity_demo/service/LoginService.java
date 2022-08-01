@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
  * Description(描述)： 无
  */
 
-@Service
+
 public class LoginService implements UserDetailsService
 {
 

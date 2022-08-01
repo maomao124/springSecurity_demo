@@ -1,61 +1,58 @@
-2022-08-01 14:16:52.314  INFO 9412 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-08-01 14:16:52.603  INFO 9412 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-08-01 14:16:52.821  WARN 9412 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
-2022-08-01 14:16:52.826  WARN 9412 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:16:52.902  WARN 9412 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
-2022-08-01 14:16:52.903  WARN 9412 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:16:54.256  INFO 9412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-01 14:16:54.397  INFO 9412 --- [main] m.s.mapper.AdministratorsMapperTest      : Started AdministratorsMapperTest in 3.626 seconds (JVM running for 4.526)
-2022-08-01 14:16:55.448 DEBUG 9412 --- [main] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
-2022-08-01 14:16:55.482 DEBUG 9412 --- [main] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
-2022-08-01 14:16:55.529 DEBUG 9412 --- [main] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
-2022-08-01 14:16:55.550  INFO 9412 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-08-01 14:16:55.557  INFO 9412 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-08-01 14:17:09.677  INFO 13848 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Starting IAdministratorsPasswordServiceTest using Java 16.0.2 on mao with PID 13848 (started by mao in H:\程序\大三暑假\springSecurity_demo)
-2022-08-01 14:17:09.679 DEBUG 13848 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Running with Spring Boot v2.6.4, Spring v5.3.16
-2022-08-01 14:17:09.679  INFO 13848 --- [main] m.s.s.IAdministratorsPasswordServiceTest : The following 1 profile is active: "dev"
-2022-08-01 14:17:10.887  INFO 13848 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-08-01 14:17:11.131  INFO 13848 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-08-01 14:17:11.377  WARN 13848 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
-2022-08-01 14:17:11.386  WARN 13848 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:17:11.543  WARN 13848 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
-2022-08-01 14:17:11.543  WARN 13848 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:17:12.947  INFO 13848 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-01 14:17:13.084  INFO 13848 --- [main] m.s.s.IAdministratorsPasswordServiceTest : Started IAdministratorsPasswordServiceTest in 3.797 seconds (JVM running for 4.721)
-2022-08-01 14:17:14.133 DEBUG 13848 --- [main] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password
-2022-08-01 14:17:14.177 DEBUG 13848 --- [main] m.s.m.A.selectList                       : ==> Parameters: 
-2022-08-01 14:17:14.211 DEBUG 13848 --- [main] m.s.m.A.selectList                       : <==      Total: 30
-2022-08-01 14:17:14.234  INFO 13848 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-08-01 14:17:14.239  INFO 13848 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-08-01 14:17:26.276  INFO 17144 --- [main] m.s.service.IAdministratorsServiceTest   : Starting IAdministratorsServiceTest using Java 16.0.2 on mao with PID 17144 (started by mao in H:\程序\大三暑假\springSecurity_demo)
-2022-08-01 14:17:26.277 DEBUG 17144 --- [main] m.s.service.IAdministratorsServiceTest   : Running with Spring Boot v2.6.4, Spring v5.3.16
-2022-08-01 14:17:26.277  INFO 17144 --- [main] m.s.service.IAdministratorsServiceTest   : The following 1 profile is active: "dev"
-2022-08-01 14:17:27.401  INFO 17144 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-08-01 14:17:27.668  INFO 17144 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-08-01 14:17:27.906  WARN 17144 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
-2022-08-01 14:17:27.914  WARN 17144 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:17:28.001  WARN 17144 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
-2022-08-01 14:17:28.002  WARN 17144 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:17:29.609  INFO 17144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-01 14:17:29.738  INFO 17144 --- [main] m.s.service.IAdministratorsServiceTest   : Started IAdministratorsServiceTest in 3.875 seconds (JVM running for 4.796)
-2022-08-01 14:17:30.857 DEBUG 17144 --- [main] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
-2022-08-01 14:17:30.893 DEBUG 17144 --- [main] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
-2022-08-01 14:17:30.927 DEBUG 17144 --- [main] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
-2022-08-01 14:17:30.950  INFO 17144 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-08-01 14:17:30.957  INFO 17144 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-08-01 14:18:08.274  INFO 1920 --- [main] m.s.service.IAdministratorsServiceTest   : Starting IAdministratorsServiceTest using Java 16.0.2 on mao with PID 1920 (started by mao in H:\程序\大三暑假\springSecurity_demo)
-2022-08-01 14:18:08.275 DEBUG 1920 --- [main] m.s.service.IAdministratorsServiceTest   : Running with Spring Boot v2.7.2, Spring v5.3.22
-2022-08-01 14:18:08.276  INFO 1920 --- [main] m.s.service.IAdministratorsServiceTest   : The following 1 profile is active: "dev"
-2022-08-01 14:18:09.471  INFO 1920 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-08-01 14:18:09.744  INFO 1920 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-08-01 14:18:09.949  WARN 1920 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
-2022-08-01 14:18:09.958  WARN 1920 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:18:10.045  WARN 1920 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
-2022-08-01 14:18:10.045  WARN 1920 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2022-08-01 14:18:11.534  INFO 1920 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ba9f986, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4aa3fc9a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25e8e59, org.springframework.security.web.header.HeaderWriterFilter@8077c97, org.springframework.security.web.csrf.CsrfFilter@1e120628, org.springframework.security.web.authentication.logout.LogoutFilter@6a7a1a0d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@184afb78, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6a5dd083, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@70f4f89e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54c11750, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1753475d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@634aa81e, org.springframework.security.web.session.SessionManagementFilter@5d5d3a5c, org.springframework.security.web.access.ExceptionTranslationFilter@65844c96, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63db743d]
-2022-08-01 14:18:11.673  INFO 1920 --- [main] m.s.service.IAdministratorsServiceTest   : Started IAdministratorsServiceTest in 3.783 seconds (JVM running for 4.776)
-2022-08-01 14:18:12.679 DEBUG 1920 --- [main] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
-2022-08-01 14:18:12.712 DEBUG 1920 --- [main] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
-2022-08-01 14:18:12.752 DEBUG 1920 --- [main] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
-2022-08-01 14:18:12.776  INFO 1920 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-08-01 14:18:12.783  INFO 1920 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 14:46:25.405  INFO 13412 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:46:25.408  INFO 13412 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 14:46:28.697  INFO 12352 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 12352 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 14:46:28.699 DEBUG 12352 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 14:46:28.699  INFO 12352 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 14:46:29.513  INFO 12352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:46:29.520  INFO 12352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 14:46:29.520  INFO 12352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 14:46:29.604  INFO 12352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 14:46:29.604  INFO 12352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 875 ms
+2022-08-01 14:46:29.699  INFO 12352 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 14:46:29.794  INFO 12352 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 14:46:29.894  WARN 12352 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 14:46:29.898  WARN 12352 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:46:29.957  WARN 12352 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 14:46:29.958  WARN 12352 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:46:30.307  INFO 12352 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c9306d3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4270b142, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d194314, org.springframework.security.web.header.HeaderWriterFilter@42c0a16e, org.springframework.security.web.csrf.CsrfFilter@b1b471, org.springframework.security.web.authentication.logout.LogoutFilter@382d71c7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ca54da9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@640d604, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2dfa02c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@637c840d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@119290b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6314df3c, org.springframework.security.web.session.SessionManagementFilter@543fe698, org.springframework.security.web.access.ExceptionTranslationFilter@24134cbc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@681061d6]
+2022-08-01 14:46:30.359  INFO 12352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 14:46:30.369  INFO 12352 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 1.996 seconds (JVM running for 2.471)
+2022-08-01 14:46:37.088  INFO 12352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 14:46:37.089  INFO 12352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 14:46:37.089  INFO 12352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-01 14:47:00.931 DEBUG 12352 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 14:47:00.947 DEBUG 12352 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 14:47:00.962 DEBUG 12352 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 14:47:38.019 DEBUG 12352 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 14:47:38.020 DEBUG 12352 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 14:47:38.022 DEBUG 12352 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 14:47:49.269 DEBUG 12352 --- [http-nio-8080-exec-10] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 14:47:49.270 DEBUG 12352 --- [http-nio-8080-exec-10] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 14:47:49.271 DEBUG 12352 --- [http-nio-8080-exec-10] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 14:48:03.549  INFO 12352 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:48:03.553  INFO 12352 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 14:48:06.022  INFO 10788 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 10788 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 14:48:06.024 DEBUG 10788 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 14:48:06.024  INFO 10788 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 14:48:06.789  INFO 10788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:48:06.796  INFO 10788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 14:48:06.797  INFO 10788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 14:48:06.879  INFO 10788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 14:48:06.880  INFO 10788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 824 ms
+2022-08-01 14:48:06.975  INFO 10788 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 14:48:07.069  INFO 10788 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 14:48:07.162  WARN 10788 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 14:48:07.165  WARN 10788 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:48:07.214  WARN 10788 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 14:48:07.214  WARN 10788 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 14:48:07.558  INFO 10788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6314df3c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5785e813, org.springframework.security.web.context.SecurityContextPersistenceFilter@51ac12ac, org.springframework.security.web.header.HeaderWriterFilter@6b2fdffc, org.springframework.security.web.csrf.CsrfFilter@492521c4, org.springframework.security.web.authentication.logout.LogoutFilter@496cc217, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a1c21b4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@512abf25, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@10b8b900, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b96de8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5438fa43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d294ddc, org.springframework.security.web.session.SessionManagementFilter@5d194314, org.springframework.security.web.access.ExceptionTranslationFilter@7c8874ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69a40b3c]
+2022-08-01 14:48:07.612  INFO 10788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 14:48:07.622  INFO 10788 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 1.919 seconds (JVM running for 2.402)
+2022-08-01 14:48:16.207  INFO 10788 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 14:48:16.207  INFO 10788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 14:48:16.208  INFO 10788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-01 14:48:29.416 DEBUG 10788 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 14:48:29.434 DEBUG 10788 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 14:48:29.448 DEBUG 10788 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 14:49:20.752  INFO 10788 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 14:49:20.756  INFO 10788 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

@@ -35,4 +35,11 @@ class IAdministratorsPasswordServiceTest
         List<AdministratorsPassword> list = administratorsPasswordService.list();
         System.out.println(list);
     }
+
+    @Test
+    void test1()
+    {
+        AdministratorsPassword administratorsPassword = administratorsPasswordService.query().eq("administrator_no",10001).one();
+        System.out.println(administratorsPassword);
+    }
 }
