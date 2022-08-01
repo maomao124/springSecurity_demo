@@ -52,6 +52,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 .antMatchers("/login.html", "/login", "/error.html",
                         "/css/**", "/js/**", "/img/**", "/test/noauth")
                 .permitAll()
+                .antMatchers("/test/root").hasAuthority("root")
+                .antMatchers("/test/admin").hasAuthority("admin")
+                .antMatchers("/test/rootOrAdmin").hasAnyAuthority("root","admin")
                 //其它请求都需要身份认证
                 .anyRequest()
                 .authenticated();

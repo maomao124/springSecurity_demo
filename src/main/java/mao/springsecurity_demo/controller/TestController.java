@@ -33,4 +33,22 @@ public class TestController
         return "noAuth";
     }
 
+    @GetMapping("/root")
+    public String root()
+    {
+        return "root权限，访问成功";
+    }
+
+    @GetMapping("/admin")
+    public String admin()
+    {
+        return "admin权限，访问成功";
+    }
+
+    @GetMapping("/rootOrAdmin")
+    public String rootOrAdmin()
+    {
+        return "admin或者root权限，访问成功";
+    }
+
 }

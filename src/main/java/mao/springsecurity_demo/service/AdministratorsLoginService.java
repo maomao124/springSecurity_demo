@@ -64,6 +64,9 @@ public class AdministratorsLoginService implements UserDetailsService
         //将数据放入user对象里并返回
         return new User(administratorsPassword.getAdministratorNo().toString(),
                 administratorsPassword.getAdministratorPassword(),
-                AuthorityUtils.createAuthorityList("administrator"));
+                //AuthorityUtils.createAuthorityList("administrator"));
+                //AuthorityUtils.createAuthorityList("admin"));
+                AuthorityUtils.createAuthorityList("root"));
+                //AuthorityUtils.createAuthorityList("root","admin"));
     }
 }

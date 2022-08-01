@@ -1,0 +1,84 @@
+2022-08-01 19:50:28.524  INFO 18572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 19:50:28.536  INFO 18572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 19:50:28.537  INFO 18572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:50:28.620  INFO 18572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:50:28.620  INFO 18572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 856 ms
+2022-08-01 19:50:28.736  INFO 18572 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 19:50:28.835  INFO 18572 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 19:50:29.178  INFO 18572 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-01 19:50:29.358  INFO 18572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@497ed877, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cb6e0ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fb3111a, org.springframework.security.web.header.HeaderWriterFilter@6c835217, org.springframework.security.web.authentication.logout.LogoutFilter@5eb87338, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b999ee8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23bd0c81, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2407a36c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b6141f0, org.springframework.security.web.session.SessionManagementFilter@51888019, org.springframework.security.web.access.ExceptionTranslationFilter@2b43f314, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32ab408e]
+2022-08-01 19:50:29.411  INFO 18572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 19:50:29.420  INFO 18572 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.014 seconds (JVM running for 2.531)
+2022-08-01 19:52:26.814  INFO 18572 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:52:26.814  INFO 18572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:52:26.815  INFO 18572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-01 19:52:39.765 DEBUG 18572 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 19:52:40.027 DEBUG 18572 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 19:52:40.045 DEBUG 18572 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 19:52:40.060 DEBUG 18572 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 19:55:59.466  INFO 18572 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 19:55:59.470  INFO 18572 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 19:56:03.042  INFO 1428 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 1428 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 19:56:03.044 DEBUG 1428 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 19:56:03.045  INFO 1428 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 19:56:03.863  INFO 1428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 19:56:03.870  INFO 1428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 19:56:03.870  INFO 1428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:56:03.953  INFO 1428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:56:03.953  INFO 1428 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 879 ms
+2022-08-01 19:56:04.062  INFO 1428 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 19:56:04.154  INFO 1428 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 19:56:04.494  INFO 1428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-01 19:56:04.674  INFO 1428 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68e2d03e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@120aa40b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f235107, org.springframework.security.web.header.HeaderWriterFilter@138f0661, org.springframework.security.web.authentication.logout.LogoutFilter@5cff729b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10d18696, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c5d3a37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4584304, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32ab408e, org.springframework.security.web.session.SessionManagementFilter@448462f0, org.springframework.security.web.access.ExceptionTranslationFilter@2bec068b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29bbc63c]
+2022-08-01 19:56:04.727  INFO 1428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 19:56:04.737  INFO 1428 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.027 seconds (JVM running for 2.506)
+2022-08-01 19:56:10.713  INFO 1428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:56:10.713  INFO 1428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:56:10.714  INFO 1428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-01 19:56:25.943 DEBUG 1428 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 19:56:26.212 DEBUG 1428 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 19:56:26.229 DEBUG 1428 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 19:56:26.245 DEBUG 1428 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 20:05:12.884  INFO 1428 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 20:05:12.888  INFO 1428 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 20:05:25.623  INFO 11952 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 11952 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 20:05:25.625 DEBUG 11952 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 20:05:25.626  INFO 11952 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 20:05:26.395  INFO 11952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 20:05:26.402  INFO 11952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 20:05:26.402  INFO 11952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:05:26.485  INFO 11952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:05:26.485  INFO 11952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 830 ms
+2022-08-01 20:05:26.587  INFO 11952 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 20:05:26.680  INFO 11952 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 20:05:27.017  INFO 11952 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-01 20:05:27.193  INFO 11952 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c48cede, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39c87b42, org.springframework.security.web.context.SecurityContextPersistenceFilter@138f0661, org.springframework.security.web.header.HeaderWriterFilter@5a2ae1ab, org.springframework.security.web.authentication.logout.LogoutFilter@5ec9eefa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28b8f98a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@448462f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b43f314, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47fcefb3, org.springframework.security.web.session.SessionManagementFilter@7d59e968, org.springframework.security.web.access.ExceptionTranslationFilter@130cfc47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a64cb0c]
+2022-08-01 20:05:27.245  INFO 11952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 20:05:27.255  INFO 11952 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 1.959 seconds (JVM running for 2.504)
+2022-08-01 20:05:40.015  INFO 11952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 20:05:40.016  INFO 11952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 20:05:40.016  INFO 11952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-01 20:05:48.553 DEBUG 11952 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 20:05:48.810 DEBUG 11952 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 20:05:48.827 DEBUG 11952 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 20:05:48.843 DEBUG 11952 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 20:05:57.680 DEBUG 11952 --- [http-nio-8080-exec-1] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 20:05:57.682 DEBUG 11952 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 20:05:57.682 DEBUG 11952 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 20:05:57.683 DEBUG 11952 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 20:06:21.297  INFO 11952 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 20:06:21.301  INFO 11952 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 20:06:24.751  INFO 17412 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 17412 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 20:06:24.753 DEBUG 17412 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 20:06:24.753  INFO 17412 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 20:06:25.521  INFO 17412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 20:06:25.527  INFO 17412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 20:06:25.527  INFO 17412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:06:25.608  INFO 17412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:06:25.608  INFO 17412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 824 ms
+2022-08-01 20:06:25.702  INFO 17412 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 20:06:25.795  INFO 17412 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 20:06:26.129  INFO 17412 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-01 20:06:26.302  INFO 17412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@571a663c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a788fe0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a4a5f3c, org.springframework.security.web.header.HeaderWriterFilter@4f235107, org.springframework.security.web.authentication.logout.LogoutFilter@4602f874, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7739aac4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@586cc15d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4aaecabd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@430df350, org.springframework.security.web.session.SessionManagementFilter@1c5d3a37, org.springframework.security.web.access.ExceptionTranslationFilter@212fafd1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@234cd86c]
+2022-08-01 20:06:26.353  INFO 17412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 20:06:26.363  INFO 17412 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 1.944 seconds (JVM running for 2.419)
