@@ -2,6 +2,8 @@ package mao.springsecurity_demo.entity;
 
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -22,6 +24,7 @@ public class Administrators implements Serializable
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("管理员编号")
+    @TableId(type = IdType.AUTO)
     private Long administratorNo;
 
     @ApiModelProperty("管理员姓名")

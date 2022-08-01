@@ -37,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 //.successForwardUrl("/index")
                 //设置登录失败之后跳转到哪个url
                 .failureUrl("/error.html")
+                //.failureForwardUrl("fail")
                 //设置表单的用户名项参数名称
                 .usernameParameter("username")
                 //设置表单的密码项参数名称
