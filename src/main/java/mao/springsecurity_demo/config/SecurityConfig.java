@@ -54,7 +54,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 .permitAll()
                 .antMatchers("/test/root").hasAuthority("root")
                 .antMatchers("/test/admin").hasAuthority("admin")
-                .antMatchers("/test/rootOrAdmin").hasAnyAuthority("root","admin")
+                .antMatchers("/test/rootOrAdmin").hasAnyAuthority("root", "admin")
+                .antMatchers("/test/role_root").hasRole("root")
+                .antMatchers("/test/role_root_or_admin").hasAnyRole("root", "admin")
                 //其它请求都需要身份认证
                 .anyRequest()
                 .authenticated();

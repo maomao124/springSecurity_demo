@@ -51,4 +51,16 @@ public class TestController
         return "admin或者root权限，访问成功";
     }
 
+    @GetMapping("/role_root")
+    public String role_root()
+    {
+        return "具有role_root角色，访问成功";
+    }
+
+    @GetMapping("/role_root_or_admin")
+    public String role_root_or_admin()
+    {
+        return "具有root或者admin角色，访问成功";
+    }
+
 }

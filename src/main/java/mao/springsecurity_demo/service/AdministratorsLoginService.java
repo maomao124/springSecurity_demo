@@ -66,7 +66,10 @@ public class AdministratorsLoginService implements UserDetailsService
                 administratorsPassword.getAdministratorPassword(),
                 //AuthorityUtils.createAuthorityList("administrator"));
                 //AuthorityUtils.createAuthorityList("admin"));
-                AuthorityUtils.createAuthorityList("admin"));
+                //AuthorityUtils.createAuthorityList("admin"));
                 //AuthorityUtils.createAuthorityList("root","admin"));
+                //AuthorityUtils.createAuthorityList("admin", "ROLE_root"));
+                //AuthorityUtils.createAuthorityList("admin", "ROLE_admin1"));
+                AuthorityUtils.createAuthorityList("admin", "ROLE_admin", "ROLE_root"));
     }
 }
