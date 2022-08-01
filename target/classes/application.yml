@@ -8,16 +8,11 @@ spring:
 #-----通用环境---------------------------------------------------------
 
   # 导入jdbc.properties文件
-#  config:
-#    import: classpath:jdbc.properties
+  config:
+    import: classpath:jdbc.properties
 
 
-  #spring-mvc配置
-  mvc:
-    # 视图解析器
-    view:
-      prefix:
-      suffix: .html
+
 
 
 
@@ -25,6 +20,7 @@ spring:
 #    user:
 #      name: abc
 #      password: 123456
+
 
 
 
@@ -38,18 +34,18 @@ spring:
     activate:
       on-profile: dev
 
-#  # 配置数据源
-#  datasource:
-#    # driver-class-name: ${jdbc.driver}
-#    # url: ${jdbc.url}
-#    # username: ${jdbc.username}
-#    # password: ${jdbc.password}
-#    # 配置数据源-druid
-#    druid:
-#      driver-class-name: ${jdbc.driver}
-#      url: ${jdbc.url}
-#      username: ${jdbc.username}
-#      password: ${jdbc.password}
+  # 配置数据源
+  datasource:
+    # driver-class-name: ${jdbc.driver}
+    # url: ${jdbc.url}
+    # username: ${jdbc.username}
+    # password: ${jdbc.password}
+    # 配置数据源-druid
+    druid:
+      driver-class-name: ${jdbc.driver}
+      url: ${jdbc.url}
+      username: ${jdbc.username}
+      password: ${jdbc.password}
 
 
 
@@ -111,6 +107,5 @@ spring:
   config:
     activate:
       on-profile: test
-
 
 
