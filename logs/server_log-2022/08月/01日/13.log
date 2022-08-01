@@ -1,0 +1,109 @@
+2022-08-01 16:35:35.799 DEBUG 6832 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : <==      Total: 0
+2022-08-01 16:35:55.215 DEBUG 6832 --- [http-nio-8080-exec-9] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:35:55.217 DEBUG 6832 --- [http-nio-8080-exec-9] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:35:55.217 DEBUG 6832 --- [http-nio-8080-exec-9] m.s.m.A.selectList                       : ==> Parameters: 12(Long)
+2022-08-01 16:35:55.218 DEBUG 6832 --- [http-nio-8080-exec-9] m.s.m.A.selectList                       : <==      Total: 0
+2022-08-01 16:36:49.148  INFO 6832 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 16:36:49.151  INFO 6832 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 16:36:52.498  INFO 1300 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 1300 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 16:36:52.500 DEBUG 1300 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 16:36:52.500  INFO 1300 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 16:36:53.266  INFO 1300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 16:36:53.273  INFO 1300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 16:36:53.273  INFO 1300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 16:36:53.360  INFO 1300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 16:36:53.360  INFO 1300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 830 ms
+2022-08-01 16:36:53.458  INFO 1300 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 16:36:53.545  INFO 1300 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 16:36:53.642  WARN 1300 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 16:36:53.645  WARN 1300 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 16:36:53.694  WARN 1300 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 16:36:53.695  WARN 1300 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 16:36:54.053  INFO 1300 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ca4dce5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1291aab5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a606260, org.springframework.security.web.header.HeaderWriterFilter@93bf0e0, org.springframework.security.web.authentication.logout.LogoutFilter@78d73b1b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@238291d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5939e24, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46468f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d133fb7, org.springframework.security.web.session.SessionManagementFilter@656842bc, org.springframework.security.web.access.ExceptionTranslationFilter@19662208, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b5a19ed]
+2022-08-01 16:36:54.106  INFO 1300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 16:36:54.116  INFO 1300 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 1.957 seconds (JVM running for 2.425)
+2022-08-01 16:37:01.761  INFO 1300 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 16:37:01.762  INFO 1300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 16:37:01.763  INFO 1300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-01 16:37:11.735 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:37:11.991 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:37:12.009 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==> Parameters: 12(Long)
+2022-08-01 16:37:12.023 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : <==      Total: 0
+2022-08-01 16:37:12.036  WARN 1300 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-08-01 16:38:04.036 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:04.037 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:04.038 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : ==> Parameters: 12(Long)
+2022-08-01 16:38:04.039 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : <==      Total: 0
+2022-08-01 16:38:04.041  WARN 1300 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-08-01 16:38:22.698 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:22.700 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:22.701 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:22.705 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:29.725 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:29.727 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:29.728 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:29.729 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:30.277 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:30.278 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:30.279 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:30.280 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:30.490 DEBUG 1300 --- [http-nio-8080-exec-9] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:30.491 DEBUG 1300 --- [http-nio-8080-exec-9] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:30.492 DEBUG 1300 --- [http-nio-8080-exec-9] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:30.493 DEBUG 1300 --- [http-nio-8080-exec-9] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:30.554 DEBUG 1300 --- [http-nio-8080-exec-10] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:30.555 DEBUG 1300 --- [http-nio-8080-exec-10] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:30.555 DEBUG 1300 --- [http-nio-8080-exec-10] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:30.556 DEBUG 1300 --- [http-nio-8080-exec-10] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:30.730 DEBUG 1300 --- [http-nio-8080-exec-1] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:30.731 DEBUG 1300 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:30.732 DEBUG 1300 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:30.734 DEBUG 1300 --- [http-nio-8080-exec-1] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:30.972 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:30.973 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:30.974 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:30.976 DEBUG 1300 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:31.207 DEBUG 1300 --- [http-nio-8080-exec-3] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:31.208 DEBUG 1300 --- [http-nio-8080-exec-3] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:31.209 DEBUG 1300 --- [http-nio-8080-exec-3] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:31.210 DEBUG 1300 --- [http-nio-8080-exec-3] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:31.461 DEBUG 1300 --- [http-nio-8080-exec-4] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:31.463 DEBUG 1300 --- [http-nio-8080-exec-4] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:31.463 DEBUG 1300 --- [http-nio-8080-exec-4] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:31.465 DEBUG 1300 --- [http-nio-8080-exec-4] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:31.545 DEBUG 1300 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:31.548 DEBUG 1300 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:31.550 DEBUG 1300 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:31.554 DEBUG 1300 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:31.748 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:31.751 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:31.751 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:31.752 DEBUG 1300 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:32.011 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:32.013 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:32.013 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:32.015 DEBUG 1300 --- [http-nio-8080-exec-7] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:38:32.270 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 16:38:32.272 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 16:38:32.272 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 16:38:32.274 DEBUG 1300 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 16:42:38.340  INFO 1300 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 16:42:38.345  INFO 1300 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-01 16:42:41.868  INFO 1072 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 1072 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-01 16:42:41.870 DEBUG 1072 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-01 16:42:41.871  INFO 1072 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-01 16:42:42.668  INFO 1072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-01 16:42:42.674  INFO 1072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-01 16:42:42.675  INFO 1072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 16:42:42.760  INFO 1072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-01 16:42:42.760  INFO 1072 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 858 ms
+2022-08-01 16:42:42.862  INFO 1072 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-01 16:42:42.954  INFO 1072 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-01 16:42:43.057  WARN 1072 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.Administrators".
+2022-08-01 16:42:43.061  WARN 1072 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.Administrators ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 16:42:43.112  WARN 1072 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "mao.springsecurity_demo.entity.AdministratorsPassword".
+2022-08-01 16:42:43.113  WARN 1072 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class mao.springsecurity_demo.entity.AdministratorsPassword ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-08-01 16:42:43.315  WARN 1072 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
+org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+to { [/error]}: There is already 'pageController' bean method
+mao.springsecurity_demo.controller.PageController#errorPage() mapped.
