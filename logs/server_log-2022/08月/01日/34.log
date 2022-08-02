@@ -1,0 +1,9 @@
+2022-08-01 22:08:37.610  INFO 10316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 22:08:37.612  INFO 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-01 22:08:37.614  INFO 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-01 22:08:45.951 DEBUG 10316 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-01 22:08:46.199 DEBUG 10316 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-01 22:08:46.214 DEBUG 10316 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-01 22:08:46.228 DEBUG 10316 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-01 22:09:56.801  INFO 10316 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-01 22:09:56.804  INFO 10316 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

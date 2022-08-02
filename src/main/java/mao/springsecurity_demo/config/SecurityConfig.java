@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
     @Override
     protected void configure(HttpSecurity http) throws Exception
     {
-        //表单登录
+        //表单登录配置
         http.formLogin()
                 //设置登录页面
                 .loginPage("/login.html")
@@ -45,6 +45,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 
         //关闭csrf
         http.csrf().disable();
+
+        //异常处理配置，403页面配置
+        http.exceptionHandling().accessDeniedPage("/unAuth.html");
 
         //认证配置
         http.authorizeRequests()
