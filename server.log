@@ -1,4 +1,1 @@
-2022-08-02 14:08:54.918 DEBUG 6376 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
-2022-08-02 14:08:54.938 DEBUG 6376 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
-2022-08-02 14:14:00.300  INFO 6376 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-08-02 14:14:00.304  INFO 6376 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-02 21:44:22.037  INFO 18500 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.205 seconds (JVM running for 2.711)

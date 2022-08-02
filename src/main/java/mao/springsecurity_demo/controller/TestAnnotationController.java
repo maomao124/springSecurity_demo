@@ -1,10 +1,14 @@
 package mao.springsecurity_demo.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 /**
  * Project name(项目名称)：springSecurity_demo
@@ -24,6 +28,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class TestAnnotationController
 {
+
+    private static final Logger log = LoggerFactory.getLogger(TestAnnotationController.class);
+
     /**
      * Role root string.
      *
@@ -128,7 +135,7 @@ public class TestAnnotationController
      * @return the string
      */
     @PreAuthorize("hasAnyAuthority('root1')")
-    @GetMapping("/anno2/root")
+    @GetMapping("/anno2/root1")
     public String authority_root1()
     {
         return "注解测试，当前需要root1权限，访问成功";
@@ -184,6 +191,18 @@ public class TestAnnotationController
     }
 
     /**
+     * Authority admin 1 or root string.
+     *
+     * @return the string
+     */
+    @PreAuthorize("hasAnyAuthority('admin1','root')")
+    @GetMapping("/anno2/admin1_or_root")
+    public String authority_admin1_or_root()
+    {
+        return "注解测试，当前需要admin1或者root权限，访问成功";
+    }
+
+    /**
      * Authority admin 1 or root 1 string.
      *
      * @return the string
@@ -193,6 +212,61 @@ public class TestAnnotationController
     public String authority_admin1_or_root1()
     {
         return "注解测试，当前需要admin1或者root1权限，访问成功";
+    }
+
+
+    //----------------------------------------
+
+    /**
+     * Authority 2 root string.
+     *
+     * @return the string
+     */
+    @PostAuthorize("hasAnyAuthority('root')")
+    @GetMapping("/anno3/root")
+    public String authority2_root()
+    {
+        log.info("PostAuthorize注解测试，当前需要root权限");
+        return "PostAuthorize注解测试，当前需要root权限，访问成功";
+    }
+
+    /**
+     * Authority 2 root 1 string.
+     *
+     * @return the string
+     */
+    @PostAuthorize("hasAnyAuthority('root1')")
+    @GetMapping("/anno3/root1")
+    public String authority2_root1()
+    {
+        log.info("PostAuthorize注解测试，当前需要root1权限");
+        return "PostAuthorize注解测试，当前需要root1权限，访问成功";
+    }
+
+    /**
+     * Authority 2 admin string.
+     *
+     * @return the string
+     */
+    @PostAuthorize("hasAnyAuthority('admin')")
+    @GetMapping("/anno3/admin")
+    public String authority2_admin()
+    {
+        log.info("PostAuthorize注解测试，当前需要admin权限");
+        return "PostAuthorize注解测试，当前需要admin权限，访问成功";
+    }
+
+    /**
+     * Authority 2 admin 1 string.
+     *
+     * @return the string
+     */
+    @PostAuthorize("hasAnyAuthority('admin1')")
+    @GetMapping("/anno3/admin1")
+    public String authority2_admin1()
+    {
+        log.info("PostAuthorize注解测试，当前需要admin1权限");
+        return "PostAuthorize注解测试，当前需要admin1权限，访问成功";
     }
 
 }
