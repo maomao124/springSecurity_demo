@@ -1,13 +1,20 @@
 package mao.springsecurity_demo.controller;
 
+import mao.springsecurity_demo.entity.Administrators;
+import mao.springsecurity_demo.service.IAdministratorsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PostAuthorize;
+import org.springframework.security.access.prepost.PostFilter;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -267,6 +274,143 @@ public class TestAnnotationController
     {
         log.info("PostAuthorize注解测试，当前需要admin1权限");
         return "PostAuthorize注解测试，当前需要admin1权限，访问成功";
+    }
+
+    //-------------------------------------
+
+    @PostFilter("filterObject.administratorNo==10002L")
+    @GetMapping("/anno4/1")
+    public List<Administrators> anno4_1()
+    {
+        log.info("执行/anno4/1");
+        List<Administrators> list = new ArrayList<>();
+        Administrators administrators = new Administrators();
+        administrators.setAdministratorNo(10002L);
+        list.add(administrators);
+        return list;
+    }
+
+    @PostFilter("filterObject.administratorNo==10003L")
+    @GetMapping("/anno4/2")
+    public List<Administrators> anno4_2()
+    {
+        log.info("执行/anno4/2");
+        List<Administrators> list = new ArrayList<>();
+        Administrators administrators = new Administrators();
+        administrators.setAdministratorNo(10002L);
+        list.add(administrators);
+        return list;
+    }
+
+    @PostFilter("filterObject.administratorNo==10003L")
+    @GetMapping("/anno4/3")
+    public List<Administrators> anno4_3()
+    {
+        log.info("执行/anno4/3");
+        List<Administrators> list = new ArrayList<>();
+        Administrators administrators1 = new Administrators();
+        administrators1.setAdministratorNo(10002L);
+        Administrators administrators2 = new Administrators();
+        administrators2.setAdministratorNo(10003L);
+        Administrators administrators3 = new Administrators();
+        administrators3.setAdministratorNo(10004L);
+        list.add(administrators1);
+        list.add(administrators2);
+        list.add(administrators3);
+        return list;
+    }
+
+    @PostFilter("filterObject.administratorNo!=10003L")
+    @GetMapping("/anno4/4")
+    public List<Administrators> anno4_4()
+    {
+        log.info("执行/anno4/4");
+        List<Administrators> list = new ArrayList<>();
+        Administrators administrators1 = new Administrators();
+        administrators1.setAdministratorNo(10002L);
+        Administrators administrators2 = new Administrators();
+        administrators2.setAdministratorNo(10003L);
+        Administrators administrators3 = new Administrators();
+        administrators3.setAdministratorNo(10004L);
+        list.add(administrators1);
+        list.add(administrators2);
+        list.add(administrators3);
+        return list;
+    }
+
+    @PostFilter("filterObject.administratorName!=null")
+    @GetMapping("/anno4/5")
+    public List<Administrators> anno4_5()
+    {
+        log.info("执行/anno4/5");
+        List<Administrators> list = new ArrayList<>();
+        Administrators administrators1 = new Administrators();
+        administrators1.setAdministratorNo(10002L);
+        administrators1.setAdministratorName("张三");
+        Administrators administrators2 = new Administrators();
+        administrators2.setAdministratorNo(10003L);
+        Administrators administrators3 = new Administrators();
+        administrators3.setAdministratorNo(10004L);
+        list.add(administrators1);
+        list.add(administrators2);
+        list.add(administrators3);
+        return list;
+    }
+
+    @PostFilter("(filterObject.administratorName!=null)&&(filterObject.administratorSex.equals('男'))")
+    @GetMapping("/anno4/6")
+    public List<Administrators> anno4_6()
+    {
+        log.info("执行/anno4/6");
+        List<Administrators> list = new ArrayList<>();
+        Administrators administrators1 = new Administrators();
+        administrators1.setAdministratorNo(10002L);
+        administrators1.setAdministratorName("张三");
+        administrators1.setAdministratorSex("女");
+        Administrators administrators2 = new Administrators();
+        administrators2.setAdministratorNo(10003L);
+        Administrators administrators3 = new Administrators();
+        administrators3.setAdministratorNo(10004L);
+        Administrators administrators4 = new Administrators();
+        administrators4.setAdministratorNo(10005L);
+        administrators4.setAdministratorName("李四");
+        administrators4.setAdministratorSex("男");
+        list.add(administrators1);
+        list.add(administrators2);
+        list.add(administrators3);
+        list.add(administrators4);
+        return list;
+    }
+
+    @Autowired
+    private IAdministratorsService administratorsService;
+
+    /**
+     * 需求：从数据库查询性别为女的数据
+     *
+     * @return List<Administrators>对象
+     */
+    @PostFilter("filterObject.administratorSex.equals('女')")
+    @GetMapping("/anno4/7")
+    public List<Administrators> anno4_7()
+    {
+        log.info("执行/anno4/7");
+        List<Administrators> list = administratorsService.query().list();
+        return list;
+    }
+
+    /**
+     * 需求：从数据库查询性别为女的数据
+     *
+     * @return List<Administrators>对象
+     */
+    @PostFilter("filterObject.administratorSex.equals('男')")
+    @GetMapping("/anno4/8")
+    public List<Administrators> anno4_8()
+    {
+        log.info("执行/anno4/8");
+        List<Administrators> list = administratorsService.query().list();
+        return list;
     }
 
 }

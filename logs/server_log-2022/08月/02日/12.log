@@ -1,0 +1,104 @@
+2022-08-02 23:05:33.234 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:33.238 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:33.413  INFO 12356 --- [http-nio-8080-exec-3] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:33.414 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:33.414 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:33.416 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:33.632  INFO 12356 --- [http-nio-8080-exec-4] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:33.632 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:33.633 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:33.634 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:34.062  INFO 12356 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:34.062 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:34.063 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:34.064 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:35.054  INFO 12356 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:35.055 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:35.055 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:35.058 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:35.532  INFO 12356 --- [http-nio-8080-exec-7] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:35.532 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:35.532 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:35.534 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:35.832  INFO 12356 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:35.833 DEBUG 12356 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:35.833 DEBUG 12356 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:35.835 DEBUG 12356 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:36.003  INFO 12356 --- [http-nio-8080-exec-9] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:36.003 DEBUG 12356 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:36.003 DEBUG 12356 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:36.005 DEBUG 12356 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:37.293  INFO 12356 --- [http-nio-8080-exec-10] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:37.294 DEBUG 12356 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:37.294 DEBUG 12356 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:37.296 DEBUG 12356 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:37.464  INFO 12356 --- [http-nio-8080-exec-1] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:37.465 DEBUG 12356 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:37.465 DEBUG 12356 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:37.467 DEBUG 12356 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:37.683  INFO 12356 --- [http-nio-8080-exec-2] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:37.683 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:37.683 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:37.685 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:37.844  INFO 12356 --- [http-nio-8080-exec-3] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:37.845 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:37.845 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:37.846 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:38.025  INFO 12356 --- [http-nio-8080-exec-4] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:38.026 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:38.026 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:38.028 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:38.202  INFO 12356 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:38.203 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:38.203 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:38.205 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:38.373  INFO 12356 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:38.373 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:38.373 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:38.375 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:38.555  INFO 12356 --- [http-nio-8080-exec-7] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:38.555 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:38.555 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:38.557 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:38.736  INFO 12356 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:38.737 DEBUG 12356 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:38.737 DEBUG 12356 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:38.739 DEBUG 12356 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:38.905  INFO 12356 --- [http-nio-8080-exec-9] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:38.905 DEBUG 12356 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:38.905 DEBUG 12356 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:38.906 DEBUG 12356 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:39.082  INFO 12356 --- [http-nio-8080-exec-10] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:39.082 DEBUG 12356 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:39.082 DEBUG 12356 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:39.085 DEBUG 12356 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:39.266  INFO 12356 --- [http-nio-8080-exec-1] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:39.266 DEBUG 12356 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:39.266 DEBUG 12356 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:39.268 DEBUG 12356 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:39.652  INFO 12356 --- [http-nio-8080-exec-2] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:39.652 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:39.652 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:39.653 DEBUG 12356 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:39.943  INFO 12356 --- [http-nio-8080-exec-3] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:39.943 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:39.944 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:39.946 DEBUG 12356 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:40.138  INFO 12356 --- [http-nio-8080-exec-4] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:40.138 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:40.138 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:40.140 DEBUG 12356 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:40.362  INFO 12356 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:40.363 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:40.363 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:40.365 DEBUG 12356 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:40.573  INFO 12356 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:40.573 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:40.574 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:40.575 DEBUG 12356 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:40.785  INFO 12356 --- [http-nio-8080-exec-7] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:40.785 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:05:40.785 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:05:40.787 DEBUG 12356 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:05:41.043  INFO 12356 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 执行/anno4/8
+2022-08-02 23:05:41.044 DEBUG 12356 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators

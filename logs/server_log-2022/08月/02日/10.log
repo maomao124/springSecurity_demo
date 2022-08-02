@@ -1,0 +1,97 @@
+2022-08-02 22:57:35.333  INFO 8628 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-02 22:57:35.357  INFO 8628 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-02 22:57:39.161  INFO 21476 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 21476 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-02 22:57:39.163 DEBUG 21476 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-02 22:57:39.164  INFO 21476 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-02 22:57:39.978  INFO 21476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-02 22:57:39.985  INFO 21476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-02 22:57:39.985  INFO 21476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-02 22:57:40.068  INFO 21476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-02 22:57:40.069  INFO 21476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 871 ms
+2022-08-02 22:57:40.213  INFO 21476 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-02 22:57:40.301  INFO 21476 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-02 22:57:40.726  INFO 21476 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-02 22:57:40.960  INFO 21476 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4245bf68, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45bbc52f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ea930eb, org.springframework.security.web.header.HeaderWriterFilter@7a36c83a, org.springframework.security.web.authentication.logout.LogoutFilter@2d237460, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48f2054d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fe8f5e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7af327e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8a551e, org.springframework.security.web.session.SessionManagementFilter@7b297740, org.springframework.security.web.access.ExceptionTranslationFilter@37ca3ca8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72af90e8]
+2022-08-02 22:57:41.017  INFO 21476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-02 22:57:41.032  INFO 21476 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.215 seconds (JVM running for 2.684)
+2022-08-02 22:57:43.810  INFO 21476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-02 22:57:43.811  INFO 21476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-02 22:57:43.812  INFO 21476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-02 22:57:47.472 DEBUG 21476 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-02 22:57:47.722 DEBUG 21476 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-02 22:57:47.738 DEBUG 21476 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-02 22:57:47.751 DEBUG 21476 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-02 22:57:47.772  INFO 21476 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/6
+2022-08-02 23:03:21.756  INFO 21476 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-02 23:03:21.762  INFO 21476 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-02 23:03:25.202  INFO 21496 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 21496 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-02 23:03:25.204 DEBUG 21496 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-02 23:03:25.204  INFO 21496 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-02 23:03:26.037  INFO 21496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-02 23:03:26.044  INFO 21496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-02 23:03:26.044  INFO 21496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-02 23:03:26.128  INFO 21496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-02 23:03:26.128  INFO 21496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 892 ms
+2022-08-02 23:03:26.247  INFO 21496 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-02 23:03:26.333  INFO 21496 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-02 23:03:26.766  INFO 21496 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-02 23:03:27.002  INFO 21496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3be3e76c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c07ad6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@37ca3ca8, org.springframework.security.web.header.HeaderWriterFilter@374ccb9, org.springframework.security.web.authentication.logout.LogoutFilter@47058864, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ad3f70a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6321a5aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ea930eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10ed037a, org.springframework.security.web.session.SessionManagementFilter@2ab09943, org.springframework.security.web.access.ExceptionTranslationFilter@597d48ca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71166348]
+2022-08-02 23:03:27.058  INFO 21496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-02 23:03:27.072  INFO 21496 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.198 seconds (JVM running for 2.676)
+2022-08-02 23:03:31.787  INFO 21496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-02 23:03:31.787  INFO 21496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-02 23:03:31.788  INFO 21496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-02 23:03:36.160 DEBUG 21496 --- [http-nio-8080-exec-4] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-02 23:03:36.421 DEBUG 21496 --- [http-nio-8080-exec-4] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-02 23:03:36.440 DEBUG 21496 --- [http-nio-8080-exec-4] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-02 23:03:36.458 DEBUG 21496 --- [http-nio-8080-exec-4] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-02 23:03:36.486  INFO 21496 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/6
+2022-08-02 23:03:41.097  INFO 21496 --- [http-nio-8080-exec-7] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:41.101 DEBUG 21496 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:41.102 DEBUG 21496 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:41.122 DEBUG 21496 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:49.761  INFO 21496 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:49.762 DEBUG 21496 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:49.762 DEBUG 21496 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:49.766 DEBUG 21496 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:50.338  INFO 21496 --- [http-nio-8080-exec-9] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:50.340 DEBUG 21496 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:50.341 DEBUG 21496 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:50.344 DEBUG 21496 --- [http-nio-8080-exec-9] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:50.713  INFO 21496 --- [http-nio-8080-exec-10] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:50.713 DEBUG 21496 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:50.714 DEBUG 21496 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:50.717 DEBUG 21496 --- [http-nio-8080-exec-10] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:53.305  INFO 21496 --- [http-nio-8080-exec-1] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:53.306 DEBUG 21496 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:53.306 DEBUG 21496 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:53.309 DEBUG 21496 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:53.699  INFO 21496 --- [http-nio-8080-exec-2] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:53.700 DEBUG 21496 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:53.701 DEBUG 21496 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:53.704 DEBUG 21496 --- [http-nio-8080-exec-2] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:53.962  INFO 21496 --- [http-nio-8080-exec-3] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:53.963 DEBUG 21496 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:53.963 DEBUG 21496 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:53.966 DEBUG 21496 --- [http-nio-8080-exec-3] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:54.198  INFO 21496 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:54.198 DEBUG 21496 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:54.199 DEBUG 21496 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:54.201 DEBUG 21496 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:54.477  INFO 21496 --- [http-nio-8080-exec-4] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:54.478 DEBUG 21496 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:54.478 DEBUG 21496 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:54.481 DEBUG 21496 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:03:54.764  INFO 21496 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:03:54.765 DEBUG 21496 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:03:54.765 DEBUG 21496 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:03:54.768 DEBUG 21496 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:04:01.094  INFO 21496 --- [http-nio-8080-exec-7] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:04:01.095 DEBUG 21496 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:04:01.095 DEBUG 21496 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:04:01.098 DEBUG 21496 --- [http-nio-8080-exec-7] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:04:01.444  INFO 21496 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 执行/anno4/7
+2022-08-02 23:04:01.445 DEBUG 21496 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:04:01.445 DEBUG 21496 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:04:01.447 DEBUG 21496 --- [http-nio-8080-exec-8] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:04:01.663  INFO 21496 --- [http-nio-8080-exec-9] m.s.controller.TestAnnotationController  : 执行/anno4/7
