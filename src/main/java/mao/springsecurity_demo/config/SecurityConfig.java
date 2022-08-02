@@ -49,10 +49,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
         //异常处理配置，403页面配置
         http.exceptionHandling().accessDeniedPage("/unAuth.html");
 
+        //退出登录配置
+        http.logout()
+                //设置退出登录的url
+                .logoutUrl("/logout")
+                //设置退出登录成功后要跳转的url
+                .logoutSuccessUrl("/thanks.html")
+                .permitAll();
+
         //认证配置
         http.authorizeRequests()
                 //指定页面不需要验证
-                .antMatchers("/login.html", "/login", "/error.html",
+                .antMatchers("/login.html", "/login", "/error.html", "/thanks.html",
                         "/css/**", "/js/**", "/img/**", "/test/noauth")
                 .permitAll()
                 .antMatchers("/test/root").hasAuthority("root")
