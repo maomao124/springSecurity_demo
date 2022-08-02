@@ -278,6 +278,11 @@ public class TestAnnotationController
 
     //-------------------------------------
 
+    /**
+     * Anno 4 1 list.
+     *
+     * @return the list
+     */
     @PostFilter("filterObject.administratorNo==10002L")
     @GetMapping("/anno4/1")
     public List<Administrators> anno4_1()
@@ -290,6 +295,11 @@ public class TestAnnotationController
         return list;
     }
 
+    /**
+     * Anno 4 2 list.
+     *
+     * @return the list
+     */
     @PostFilter("filterObject.administratorNo==10003L")
     @GetMapping("/anno4/2")
     public List<Administrators> anno4_2()
@@ -302,6 +312,11 @@ public class TestAnnotationController
         return list;
     }
 
+    /**
+     * Anno 4 3 list.
+     *
+     * @return the list
+     */
     @PostFilter("filterObject.administratorNo==10003L")
     @GetMapping("/anno4/3")
     public List<Administrators> anno4_3()
@@ -320,6 +335,11 @@ public class TestAnnotationController
         return list;
     }
 
+    /**
+     * Anno 4 4 list.
+     *
+     * @return the list
+     */
     @PostFilter("filterObject.administratorNo!=10003L")
     @GetMapping("/anno4/4")
     public List<Administrators> anno4_4()
@@ -338,6 +358,11 @@ public class TestAnnotationController
         return list;
     }
 
+    /**
+     * Anno 4 5 list.
+     *
+     * @return the list
+     */
     @PostFilter("filterObject.administratorName!=null")
     @GetMapping("/anno4/5")
     public List<Administrators> anno4_5()
@@ -357,6 +382,11 @@ public class TestAnnotationController
         return list;
     }
 
+    /**
+     * Anno 4 6 list.
+     *
+     * @return the list
+     */
     @PostFilter("(filterObject.administratorName!=null)&&(filterObject.administratorSex.equals('男'))")
     @GetMapping("/anno4/6")
     public List<Administrators> anno4_6()
@@ -388,7 +418,7 @@ public class TestAnnotationController
     /**
      * 需求：从数据库查询性别为女的数据
      *
-     * @return List<Administrators>对象
+     * @return List<Administrators> 对象
      */
     @PostFilter("filterObject.administratorSex.equals('女')")
     @GetMapping("/anno4/7")
@@ -402,7 +432,7 @@ public class TestAnnotationController
     /**
      * 需求：从数据库查询性别为女的数据
      *
-     * @return List<Administrators>对象
+     * @return List<Administrators> 对象
      */
     @PostFilter("filterObject.administratorSex.equals('男')")
     @GetMapping("/anno4/8")
