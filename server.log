@@ -1,25 +1,7 @@
-2022-08-02 23:10:59.371  INFO 18460 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.248 seconds (JVM running for 2.746)
-2022-08-02 23:10:59.543  INFO 18460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-02 23:10:59.543  INFO 18460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-02 23:10:59.544  INFO 18460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-08-02 23:11:06.937 DEBUG 18460 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
-2022-08-02 23:11:07.183 DEBUG 18460 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
-2022-08-02 23:11:07.200 DEBUG 18460 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
-2022-08-02 23:11:07.216 DEBUG 18460 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
-2022-08-02 23:11:07.240  INFO 18460 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/1
-2022-08-02 23:11:33.067  INFO 18460 --- [http-nio-8080-exec-7] m.s.controller.TestAnnotationController  : 执行/anno4/2
-2022-08-02 23:11:46.867  INFO 18460 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 执行/anno4/3
-2022-08-02 23:12:03.320  INFO 18460 --- [http-nio-8080-exec-1] m.s.controller.TestAnnotationController  : 执行/anno4/4
-2022-08-02 23:12:28.642  INFO 18460 --- [http-nio-8080-exec-2] m.s.controller.TestAnnotationController  : 执行/anno4/5
-2022-08-02 23:12:44.683  INFO 18460 --- [http-nio-8080-exec-3] m.s.controller.TestAnnotationController  : 执行/anno4/6
-2022-08-02 23:13:05.323  INFO 18460 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 执行/anno4/7
-2022-08-02 23:13:05.335  WARN 18460 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/student1, version : 1.2.8, lastPacketReceivedIdleMillis : 118122
-2022-08-02 23:13:05.356 DEBUG 18460 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
-2022-08-02 23:13:05.357 DEBUG 18460 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
-2022-08-02 23:13:05.363 DEBUG 18460 --- [http-nio-8080-exec-5] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
-2022-08-02 23:13:46.580  INFO 18460 --- [http-nio-8080-exec-6] m.s.controller.TestAnnotationController  : 执行/anno4/8
-2022-08-02 23:13:46.580 DEBUG 18460 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
-2022-08-02 23:13:46.581 DEBUG 18460 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
-2022-08-02 23:13:46.585 DEBUG 18460 --- [http-nio-8080-exec-6] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
-2022-08-02 23:14:51.418  INFO 18460 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-08-02 23:14:51.423  INFO 18460 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-02 23:35:54.320  INFO 6988 --- [http-nio-8080-exec-4] m.s.controller.TestAnnotationController  : 执行/anno5/0
+2022-08-02 23:35:54.334  WARN 6988 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/student1, version : 1.2.8, lastPacketReceivedIdleMillis : 194908
+2022-08-02 23:35:54.358 DEBUG 6988 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:35:54.358 DEBUG 6988 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:35:54.361 DEBUG 6988 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:36:27.631  INFO 6988 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-02 23:36:27.634  INFO 6988 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

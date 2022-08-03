@@ -61,7 +61,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
         http.authorizeRequests()
                 //指定页面不需要验证
                 .antMatchers("/login.html", "/login", "/error.html", "/thanks.html",
-                        "/css/**", "/js/**", "/img/**", "/test/noauth")
+                        "/css/**", "/js/**", "/img/**",
+                        "/test/noauth", "/test/anno5/**")
                 .permitAll()
                 .antMatchers("/test/root").hasAuthority("root")
                 .antMatchers("/test/admin").hasAuthority("admin")

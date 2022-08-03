@@ -9,9 +9,8 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PostFilter;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreFilter;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -440,6 +439,73 @@ public class TestAnnotationController
     {
         log.info("执行/anno4/8");
         List<Administrators> list = administratorsService.query().list();
+        return list;
+    }
+
+    /**
+     * 查询全部
+     *
+     * @return List<Administrators>
+     */
+    @GetMapping("/anno5/0")
+    public List<Administrators> anno5_0()
+    {
+        log.info("执行/anno5/0");
+        List<Administrators> list = administratorsService.query().list();
+        return list;
+    }
+
+    /**
+     * 只需要性别为男的数据
+     *
+     * @param list List<Administrators>
+     * @return List<Administrators> 结果
+     */
+    @PreFilter("filterObject.administratorSex.equals('男')")
+    @PostMapping("/anno5/1")
+    public List<Administrators> anno5_1(@RequestBody List<Administrators> list)
+    {
+        log.info("执行/anno5/1");
+        for (Administrators administrators : list)
+        {
+            log.debug("\n" + administrators + "\n");
+        }
+        return list;
+    }
+
+    /**
+     * 只需要性别为女的数据
+     *
+     * @param list List<Administrators>
+     * @return List<Administrators> 结果
+     */
+    @PreFilter("filterObject.administratorSex.equals('女')")
+    @PostMapping("/anno5/2")
+    public List<Administrators> anno5_2(@RequestBody List<Administrators> list)
+    {
+        log.info("执行/anno5/2");
+        for (Administrators administrators : list)
+        {
+            log.debug("\n" + administrators + "\n");
+        }
+        return list;
+    }
+
+    /**
+     * 只需要名字包含‘唐’字的数据
+     *
+     * @param list List<Administrators>
+     * @return List<Administrators> 结果
+     */
+    @PreFilter("filterObject.administratorName.contains('唐')")
+    @PostMapping("/anno5/3")
+    public List<Administrators> anno5_3(@RequestBody List<Administrators> list)
+    {
+        log.info("执行/anno5/3");
+        for (Administrators administrators : list)
+        {
+            log.debug("\n" + administrators + "\n");
+        }
         return list;
     }
 
