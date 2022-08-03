@@ -87,7 +87,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 //指定页面不需要验证
                 .antMatchers("/login.html", "/login", "/error.html", "/thanks.html",
                         "/css/**", "/js/**", "/img/**",
-                        "/test/noauth", "/test/anno5/**","/userLogin")
+                        "/test/noauth", "/test/anno5/**", "/userLogin")
                 .permitAll()
                 .antMatchers("/test/root").hasAuthority("root")
                 .antMatchers("/test/admin").hasAuthority("admin")
