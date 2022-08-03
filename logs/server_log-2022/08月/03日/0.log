@@ -1,0 +1,318 @@
+2022-08-03 13:17:51.508  INFO 6988 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 6988 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-03 13:17:51.513 DEBUG 6988 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-03 13:17:51.513  INFO 6988 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-03 13:17:52.503  INFO 6988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-03 13:17:52.511  INFO 6988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-03 13:17:52.512  INFO 6988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-03 13:17:52.613  INFO 6988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-03 13:17:52.613  INFO 6988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1056 ms
+2022-08-03 13:17:52.733  INFO 6988 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-03 13:17:52.837  INFO 6988 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-03 13:17:53.395  INFO 6988 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-03 13:17:53.708  INFO 6988 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1eb9bf60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@341c6ac2, org.springframework.security.web.context.SecurityContextPersistenceFilter@781654f8, org.springframework.security.web.header.HeaderWriterFilter@7f0d8eff, org.springframework.security.web.authentication.logout.LogoutFilter@71166348, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d874695, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e958f08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ea71fc2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38811103, org.springframework.security.web.session.SessionManagementFilter@3ca3648, org.springframework.security.web.access.ExceptionTranslationFilter@11e71181, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31881aa2]
+2022-08-03 13:17:53.791  INFO 6988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-03 13:17:53.805  INFO 6988 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.663 seconds (JVM running for 3.272)
+2022-08-03 13:18:10.694  INFO 6988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-03 13:18:10.694  INFO 6988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-03 13:18:10.695  INFO 6988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-03 13:18:10.729  INFO 6988 --- [http-nio-8080-exec-1] m.s.controller.TestAnnotationController  : 执行/anno5/0
+2022-08-03 13:18:11.070 DEBUG 6988 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-03 13:18:11.089 DEBUG 6988 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-03 13:18:11.130 DEBUG 6988 --- [http-nio-8080-exec-1] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-03 13:21:28.760  INFO 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 执行/anno5/1
+2022-08-03 13:21:28.760 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10005
+administratorName：裴策奇
+administratorSex：男
+administratorTelephoneNumber：13906801424
+administratorJob：计算机学院副院长
+administratorIdcard：436700200205167159
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10006
+administratorName：常新
+administratorSex：男
+administratorTelephoneNumber：15200884859
+administratorJob：计算机学院副院长
+administratorIdcard：425230199905174567
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10007
+administratorName：文波
+administratorSex：男
+administratorTelephoneNumber：13002966149
+administratorJob：计算机学院副院长
+administratorIdcard：440405199901072724
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10009
+administratorName：琴有奇
+administratorSex：男
+administratorTelephoneNumber：13207633407
+administratorJob：管理员
+administratorIdcard：437776200107198012
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10010
+administratorName：容彪诚
+administratorSex：男
+administratorTelephoneNumber：13704933439
+administratorJob：管理员
+administratorIdcard：435874200305254814
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10012
+administratorName：仇生良
+administratorSex：男
+administratorTelephoneNumber：13204292788
+administratorJob：管理员
+administratorIdcard：422574200108068146
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10013
+administratorName：蒙海冠
+administratorSex：男
+administratorTelephoneNumber：13003853784
+administratorJob：管理员
+administratorIdcard：423806200205164383
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10016
+administratorName：向冠
+administratorSex：男
+administratorTelephoneNumber：15005897305
+administratorJob：管理员
+administratorIdcard：430461200304265635
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10017
+administratorName：彭辉生
+administratorSex：男
+administratorTelephoneNumber：13700370300
+administratorJob：管理员
+administratorIdcard：432611200105216186
+
+
+2022-08-03 13:21:28.761 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10019
+administratorName：李明
+administratorSex：男
+administratorTelephoneNumber：13804178399
+administratorJob：管理员
+administratorIdcard：434880200009014080
+
+
+2022-08-03 13:21:28.762 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10020
+administratorName：白鸣坚
+administratorSex：男
+administratorTelephoneNumber：15601790970
+administratorJob：管理员
+administratorIdcard：428468199903043027
+
+
+2022-08-03 13:21:28.762 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10022
+administratorName：宰广震
+administratorSex：男
+administratorTelephoneNumber：13306854395
+administratorJob：管理员
+administratorIdcard：435022200307255751
+
+
+2022-08-03 13:21:28.762 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10023
+administratorName：曾奇利
+administratorSex：男
+administratorTelephoneNumber：13503052929
+administratorJob：管理员
+administratorIdcard：431917200309113634
+
+
+2022-08-03 13:21:28.762 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10024
+administratorName：离良光
+administratorSex：男
+administratorTelephoneNumber：13205957069
+administratorJob：管理员
+administratorIdcard：427136200309201542
+
+
+2022-08-03 13:21:28.762 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10025
+administratorName：都德光
+administratorSex：男
+administratorTelephoneNumber：13908498869
+administratorJob：管理员
+administratorIdcard：427667200102066356
+
+
+2022-08-03 13:21:28.762 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10026
+administratorName：终泰
+administratorSex：男
+administratorTelephoneNumber：13402995699
+administratorJob：管理员
+administratorIdcard：421738200201021058
+
+
+2022-08-03 13:21:28.762 DEBUG 6988 --- [http-nio-8080-exec-5] m.s.controller.TestAnnotationController  : 
+administratorNo：10027
+administratorName：乐振
+administratorSex：男
+administratorTelephoneNumber：13802950621
+administratorJob：管理员
+administratorIdcard：432185200103143063
+
+
+2022-08-03 13:27:34.328  INFO 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 执行/anno5/2
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10001
+administratorName：唐淑玲
+administratorSex：女
+administratorTelephoneNumber：13801143638
+administratorJob：校长
+administratorIdcard：439165200008274998
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10002
+administratorName：隗瑶
+administratorSex：女
+administratorTelephoneNumber：15302990518
+administratorJob：副校长
+administratorIdcard：422080200209084877
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10003
+administratorName：甫黛
+administratorSex：女
+administratorTelephoneNumber：13204546288
+administratorJob：副校长
+administratorIdcard：435943200304212416
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10004
+administratorName：祖瑶影
+administratorSex：女
+administratorTelephoneNumber：13606453515
+administratorJob：计算机学院院长
+administratorIdcard：437336199902254962
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10008
+administratorName：牛巧
+administratorSex：女
+administratorTelephoneNumber：15906467901
+administratorJob：管理员
+administratorIdcard：427804200109122721
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10011
+administratorName：酆馥霞
+administratorSex：女
+administratorTelephoneNumber：13805661106
+administratorJob：管理员
+administratorIdcard：432958199903241775
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10014
+administratorName：贡瑾育
+administratorSex：女
+administratorTelephoneNumber：13800310215
+administratorJob：管理员
+administratorIdcard：436145200003095722
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10015
+administratorName：钟园璐
+administratorSex：女
+administratorTelephoneNumber：15204391113
+administratorJob：管理员
+administratorIdcard：431764199909143390
+
+
+2022-08-03 13:27:34.329 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10018
+administratorName：常荣芝
+administratorSex：女
+administratorTelephoneNumber：13704638779
+administratorJob：管理员
+administratorIdcard：422857200104226262
+
+
+2022-08-03 13:27:34.330 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10021
+administratorName：富凝珠
+administratorSex：女
+administratorTelephoneNumber：13002418313
+administratorJob：管理员
+administratorIdcard：427292200111188298
+
+
+2022-08-03 13:27:34.330 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10028
+administratorName：百咏眉
+administratorSex：女
+administratorTelephoneNumber：15900848912
+administratorJob：管理员
+administratorIdcard：432945200311205420
+
+
+2022-08-03 13:27:34.330 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10029
+administratorName：益育
+administratorSex：女
+administratorTelephoneNumber：13003655837
+administratorJob：管理员
+administratorIdcard：431957200302288367
+
+
+2022-08-03 13:27:34.330 DEBUG 6988 --- [http-nio-8080-exec-8] m.s.controller.TestAnnotationController  : 
+administratorNo：10030
+administratorName：姓岚玲
+administratorSex：女
+administratorTelephoneNumber：15500945048
+administratorJob：管理员
+administratorIdcard：427975200306115062
+
+
+2022-08-03 13:29:22.806  INFO 6988 --- [http-nio-8080-exec-2] m.s.controller.TestAnnotationController  : 执行/anno5/3
+2022-08-03 13:29:22.806 DEBUG 6988 --- [http-nio-8080-exec-2] m.s.controller.TestAnnotationController  : 
+administratorNo：10001
+administratorName：唐淑玲
+administratorSex：女
+administratorTelephoneNumber：13801143638
+administratorJob：校长
+administratorIdcard：439165200008274998
+
+
+2022-08-03 13:57:20.495  INFO 6988 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-03 13:57:20.496  INFO 6988 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-03 13:57:24.418  INFO 9720 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 9720 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
+2022-08-03 13:57:24.420 DEBUG 9720 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-03 13:57:24.420  INFO 9720 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
+2022-08-03 13:57:25.252  INFO 9720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-03 13:57:25.258  INFO 9720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-03 13:57:25.259  INFO 9720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-03 13:57:25.345  INFO 9720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-03 13:57:25.345  INFO 9720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 893 ms
+2022-08-03 13:57:25.398  INFO 9720 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-03 13:57:25.494  INFO 9720 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-03 13:57:25.981  INFO 9720 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-03 13:57:26.206  INFO 9720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@437281c5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@787178b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@23121d14, org.springframework.security.web.header.HeaderWriterFilter@79add732, org.springframework.security.web.authentication.logout.LogoutFilter@2315052d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@634e1b39, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aa1bb14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53982523, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6dae70f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24a4e2c5, org.springframework.security.web.session.SessionManagementFilter@6c07ad6b, org.springframework.security.web.access.ExceptionTranslationFilter@4703c998, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b28a7bf]
+2022-08-03 13:57:26.261  INFO 9720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''

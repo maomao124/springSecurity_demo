@@ -21,6 +21,11 @@ Project name(项目名称)：springSecurity_demo
         body {
             background-color: skyblue;
         }
+
+        #remember-me {
+            width: 300px;
+            height: 40px;
+        }
     </style>
 </head>
 <body>
@@ -35,7 +40,7 @@ Project name(项目名称)：springSecurity_demo
 <div class="form_position">
     <div class="animated bounceInDown">
         <div class="form">
-            <form action="/login"  method="post">
+            <form action="/login" method="post">
                 <table border="1">
                     <tr>
                         <td colspan="2" align="center">
@@ -54,6 +59,14 @@ Project name(项目名称)：springSecurity_demo
                         <td>
                             <label>
                                 <input class="input" type="password" name="password" required="required">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="prompt">记住密码</td>
+                        <td>
+                            <label>
+                                <input id="remember-me" class="input" type="checkbox" name="remember-me" title="记住密码">
                             </label>
                         </td>
                     </tr>

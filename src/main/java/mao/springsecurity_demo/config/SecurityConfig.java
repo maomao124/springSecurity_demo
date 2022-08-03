@@ -1,11 +1,11 @@
 package mao.springsecurity_demo.config;
 
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
 /**
  * Project name(项目名称)：springSecurity_demo
@@ -23,6 +23,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter
 {
+    @Autowired
+    private PersistentTokenRepository persistentTokenRepository;
+
+    @Autowired
+    private UserDetailsService userDetailsService;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception
     {
@@ -56,6 +62,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 //设置退出登录成功后要跳转的url
                 .logoutSuccessUrl("/thanks.html")
                 .permitAll();
+
+        //自动登录配置
+        http.rememberMe()
+                //指定要使用的PersistentTokenRepository 。默认是使用TokenBasedRememberMeServices
+                .tokenRepository(persistentTokenRepository)
+                //指定当记住我令牌有效时用于查找UserDetails的UserDetailsService
+                .userDetailsService(userDetailsService)
+                //设置有效期，单位是秒，默认是2周时间。即使项目重新启动下次也可以正常登录
+                .tokenValiditySeconds(2 * 60)
+                //设置表单的记住密码项参数名称，默认是remember-me
+                .rememberMeParameter("remember-me");
 
         //认证配置
         http.authorizeRequests()

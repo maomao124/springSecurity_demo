@@ -1,0 +1,7 @@
+2022-08-02 23:35:54.320  INFO 6988 --- [http-nio-8080-exec-4] m.s.controller.TestAnnotationController  : 执行/anno5/0
+2022-08-02 23:35:54.334  WARN 6988 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/student1, version : 1.2.8, lastPacketReceivedIdleMillis : 194908
+2022-08-02 23:35:54.358 DEBUG 6988 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==>  Preparing: SELECT administrator_no,administrator_name,administrator_sex,administrator_telephone_number,administrator_job,administrator_idcard FROM administrators
+2022-08-02 23:35:54.358 DEBUG 6988 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : ==> Parameters: 
+2022-08-02 23:35:54.361 DEBUG 6988 --- [http-nio-8080-exec-4] m.s.m.AdministratorsMapper.selectList    : <==      Total: 30
+2022-08-02 23:36:27.631  INFO 6988 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-02 23:36:27.634  INFO 6988 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
