@@ -1,8 +1,12 @@
 package mao.springsecurity_demo.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Project name(项目名称)：springSecurity_demo
@@ -22,11 +26,20 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping()
 public class PageController
 {
-    @RequestMapping("index")
+    private static final Logger log = LoggerFactory.getLogger(PageController.class);
+
+/*    @RequestMapping("/index")
     public ModelAndView index()
     {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("index.html");
+        modelAndView.setViewName("index");
         return modelAndView;
+    }*/
+
+    @RequestMapping("/userLogin")
+    public String login(HttpServletRequest httpServletRequest)
+    {
+        log.debug("IP:" + httpServletRequest.getRemoteAddr() + " get login page");
+        return "login";
     }
 }
