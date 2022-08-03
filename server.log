@@ -1,34 +1,19 @@
-2022-08-03 20:32:53.546  INFO 19368 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.267 seconds (JVM running for 2.782)
-2022-08-03 20:32:56.057  INFO 19368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-03 20:32:56.058  INFO 19368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-03 20:32:56.058  INFO 19368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-08-03 20:32:56.127 DEBUG 19368 --- [http-nio-8080-exec-2] m.s.controller.PageController            : IP:0:0:0:0:0:0:0:1 get login page
-2022-08-03 20:33:03.572 DEBUG 19368 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
-2022-08-03 20:33:03.823 DEBUG 19368 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
-2022-08-03 20:33:03.838 DEBUG 19368 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
-2022-08-03 20:33:03.852 DEBUG 19368 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
-2022-08-03 20:46:17.644 DEBUG 19368 --- [http-nio-8080-exec-2] m.s.controller.PageController            : IP:0:0:0:0:0:0:0:1 get login page
-2022-08-03 20:47:37.944  INFO 19368 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-08-03 20:47:37.949  INFO 19368 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-08-03 20:47:41.283  INFO 17400 --- [main] m.s.SpringSecurityDemoApplication        : Starting SpringSecurityDemoApplication using Java 16.0.2 on mao with PID 17400 (H:\程序\大三暑假\springSecurity_demo\target\classes started by mao in H:\程序\大三暑假\springSecurity_demo)
-2022-08-03 20:47:41.285 DEBUG 17400 --- [main] m.s.SpringSecurityDemoApplication        : Running with Spring Boot v2.7.2, Spring v5.3.22
-2022-08-03 20:47:41.286  INFO 17400 --- [main] m.s.SpringSecurityDemoApplication        : The following 1 profile is active: "dev"
-2022-08-03 20:47:42.133  INFO 17400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-03 20:47:42.140  INFO 17400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-03 20:47:42.141  INFO 17400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-03 20:47:42.226  INFO 17400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-03 20:47:42.226  INFO 17400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 905 ms
-2022-08-03 20:47:42.287  INFO 17400 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-08-03 20:47:42.377  INFO 17400 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-08-03 20:47:42.870  INFO 17400 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-08-03 20:47:43.133  INFO 17400 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59e7564b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@482ba4b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@267891bf, org.springframework.security.web.header.HeaderWriterFilter@4b4814d0, org.springframework.security.web.csrf.CsrfFilter@53feeac9, org.springframework.security.web.authentication.logout.LogoutFilter@7af1d072, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27ffd9f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@111a7973, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15369d73, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@17216605, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@307af381, org.springframework.security.web.session.SessionManagementFilter@54326e9, org.springframework.security.web.access.ExceptionTranslationFilter@3b170235, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53d30d23]
-2022-08-03 20:47:43.201  INFO 17400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-03 20:47:43.211  INFO 17400 --- [main] m.s.SpringSecurityDemoApplication        : Started SpringSecurityDemoApplication in 2.273 seconds (JVM running for 2.791)
-2022-08-03 20:48:27.747  INFO 17400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-03 20:48:27.748  INFO 17400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-03 20:48:27.749  INFO 17400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-03 20:48:27.820 DEBUG 17400 --- [http-nio-8080-exec-2] m.s.controller.PageController            : IP:0:0:0:0:0:0:0:1 get login page
-2022-08-03 20:49:05.455 DEBUG 17400 --- [http-nio-8080-exec-5] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
-2022-08-03 20:49:05.709 DEBUG 17400 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
-2022-08-03 20:49:05.724 DEBUG 17400 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
-2022-08-03 20:49:05.738 DEBUG 17400 --- [http-nio-8080-exec-5] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-03 21:02:45.217  INFO 14932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-03 21:02:45.219  INFO 14932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-03 21:02:45.220  INFO 14932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-03 21:02:49.677 DEBUG 14932 --- [http-nio-8080-exec-3] m.s.controller.PageController            : IP:0:0:0:0:0:0:0:1 get login page
+2022-08-03 21:02:55.831 DEBUG 14932 --- [http-nio-8080-exec-6] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-03 21:02:56.078 DEBUG 14932 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-03 21:02:56.093 DEBUG 14932 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-03 21:02:56.108 DEBUG 14932 --- [http-nio-8080-exec-6] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-03 21:02:57.253 DEBUG 14932 --- [http-nio-8080-exec-9] m.s.controller.PageController            : IP:0:0:0:0:0:0:0:1 get login page
+2022-08-03 21:03:01.386 DEBUG 14932 --- [http-nio-8080-exec-2] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-03 21:03:01.388 DEBUG 14932 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-03 21:03:01.388 DEBUG 14932 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-03 21:03:01.390 DEBUG 14932 --- [http-nio-8080-exec-2] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-03 21:03:02.363 DEBUG 14932 --- [http-nio-8080-exec-5] m.s.controller.PageController            : IP:0:0:0:0:0:0:0:1 get login page
+2022-08-03 21:03:13.170 DEBUG 14932 --- [http-nio-8080-exec-8] m.s.service.AdministratorsLoginService   : 进入AdministratorsLoginService
+2022-08-03 21:03:13.171 DEBUG 14932 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==>  Preparing: SELECT administrator_no,administrator_password FROM administrators_password WHERE (administrator_no = ?)
+2022-08-03 21:03:13.172 DEBUG 14932 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : ==> Parameters: 10001(Long)
+2022-08-03 21:03:13.173 DEBUG 14932 --- [http-nio-8080-exec-8] m.s.m.A.selectList                       : <==      Total: 1
+2022-08-03 21:03:17.130 DEBUG 14932 --- [http-nio-8080-exec-3] m.s.controller.PageController            : IP:0:0:0:0:0:0:0:1 get login page
